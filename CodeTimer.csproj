@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Rezun.Timer</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <LangVersion>7.3</LangVersion>
+    <RepositoryUrl>https://github.com/rezun/CodeTimer</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Configurations>Release;Debug</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Rezun.CodeTimer</PackageId>
+    <Summary>Simple and easy to use timer to time code and functions.</Summary>
+    <Description>Simple and easy to use timer to time code and functions.</Description>
+    <Authors>Steve Schmidt</Authors>
+    <Version>1.0.0</Version>
+    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+    <PackageTags>timer stopwatch</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/rezun/CodeTimer</PackageProjectUrl>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Readme.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

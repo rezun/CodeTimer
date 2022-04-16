@@ -73,8 +73,7 @@ static void FullTimerArguments()
         // Don't start the timer yet.
         startImmediately: false,
         // Enabled, even if CodeTimer.Enabled is false
-        enabled: true));
-
+        enabled: true))
     {
         // Code that shouldn't be logged
         // ...
